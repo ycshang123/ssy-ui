@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:46:34
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-27 20:46:34
+ * @LastEditTime: 2022-12-27 21:05:39
  */
 
 /* css reset */
@@ -10,3 +10,6 @@
 
 /* 公共样式 */
 @import './common.css';
+
+/* 字体图标 */
+@import './icon.css';
