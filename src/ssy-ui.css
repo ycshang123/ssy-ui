@@ -1,0 +1,12 @@
+/*
+ * @Author: ycshang
+ * @Date: 2022-12-27 20:46:34
+ * @LastEditors: ycshang
+ * @LastEditTime: 2022-12-27 20:46:34
+ */
+
+/* css reset */
+@import './reset.css';
+
+/* 公共样式 */
+@import './common.css';
