@@ -2,18 +2,42 @@
  * @Author: ycshang
  * @Date: 2022-12-27 21:12:25
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-27 21:12:32
+ * @LastEditTime: 2022-12-27 21:37:07
  */
 
 /* 头部导航条 */
-
 .ssy-header {
+    display: flex;
     position: fixed;
     box-sizing: border-box;
     width: 100%;
     max-width: 640px;
     height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
     top: 0;
     z-index: 200;
     border-bottom: 1px solid #ddd;
+    background: #f8f8f8;
+}
+
+/* 左侧功能区 */
+.ssy-header>.left {
+    flex-basis: 4rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* 中间标题部分 */
+.ssy-header>.title {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 右侧功能区 */
+.ssy-header>.right {
+    flex-basis: 4rem;
+    flex-shrink: 0;
 }
