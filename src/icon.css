@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:51:36
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-27 20:57:27
+ * @LastEditTime: 2022-12-28 21:49:00
  */
 
 /* 字体图标，依赖font-awesome */
@@ -19,19 +19,19 @@
 }
 
 /* 红色图标 */
-.fa-code {
+/* .fa-code {
     color: red;
-}
+} */
 
 /* 圆形实心图标 */
-.fa-info {
+/* .fa-info {
     background: #666;
     color: #fff;
     border-radius: 50%;
-}
+} */
 
 /* 大图标 */
-.fa-check {
+/* .fa-check {
     display: block;
     margin: 0 auto;
     width: 6rem;
@@ -41,4 +41,4 @@
     border-radius: 50%;
     background: #09BB07;
     color: #fff;
-}
+} */
