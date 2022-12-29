@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 21:17:32
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-28 21:19:26
+ * @LastEditTime: 2022-12-29 21:36:50
  */
 
 /* 内容区 */
@@ -10,6 +10,7 @@
     box-sizing: border-box;
     position: relative;
     overflow-y: auto;
+    height: 100%;
 }
 
 /* 根据header和navbar自动适应内容区高度 */

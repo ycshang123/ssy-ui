@@ -1,0 +1,123 @@
+/* 搜索框 */
+.ssy-search {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
+
+/* 搜索状态中，覆盖内容区 */
+.ssy-search.on-focus {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+/* 处理有标题栏的情况 */
+.ssy-header~.ssy-content .ssy-search.on-focus {
+    top: 2.3rem;
+}
+
+/* 处理有导航栏的情况 */
+.ssy-navbar~.ssy-content .ssy-search.on-focus {
+    bottom: 2.5rem;
+}
+
+/* 搜索栏中的表单 */
+.ssy-search>.ssy-search-form {
+    display: flex;
+    height: 2.3rem;
+    align-items: center;
+}
+
+/* 输入框的容器 */
+.ssy-search>.ssy-search-form>.ssy-search-input-wrap {
+    flex: 1;
+    position: relative;
+    padding: 0 .5rem;
+}
+
+/* 取消按钮 */
+.ssy-search>.ssy-search-form>.ssy-search-cancel {
+    flex: 0 0 2.2rem;
+    padding-right: .5rem;
+    text-align: center;
+    font-size: .7rem;
+    display: none;
+}
+
+/* 对取消按钮的控制 */
+.ssy-search.on-focus>.ssy-search-form>.ssy-search-cancel {
+    display: block;
+}
+
+/* 搜索图标 */
+.ssy-search .ssy-search-icon {
+    position: absolute;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .7rem;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+}
+
+
+/* 输入框的样式 */
+.ssy-search .ssy-search-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.6rem;
+    border: none;
+    font-size: .8rem;
+    padding-left: 2.0rem;
+    line-height: 1.6rem;
+    background: #fff;
+    border-radius: .2rem;
+}
+
+/* 清空按钮的样式 */
+.ssy-search .ssy-search-clear {
+    position: absolute;
+    height: .8rem;
+    line-height: .8rem;
+    width: .8rem;
+    font-size: .6rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #ccc;
+    display: none;
+}
+
+/* 对清空按钮的控制 */
+.ssy-search.on-focus .ssy-search-input:valid+.ssy-search-clear {
+    display: block;
+}
+
+/* 搜索建议 */
+.ssy-search>.ssy-search-suggest {
+    display: none;
+}
+
+.ssy-search.on-focus>.ssy-search-suggest {
+    display: block;
+}
+
+/* 搜索建议的内容 */
+.ssy-search>.ssy-search-suggest>.ssy-suggest-item {
+    padding-left: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}

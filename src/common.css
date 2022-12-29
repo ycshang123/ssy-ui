@@ -2,12 +2,13 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:45:35
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-27 21:22:59
+ * @LastEditTime: 2022-12-29 21:36:25
  */
 
 /* 屏幕宽度在340px至410px时,基准尺寸使用20px */
 html {
     font-size: 20px;
+    height: 100%;
 }
 
 /* 屏幕宽度小于340px时，基准尺寸使用18px */
@@ -32,6 +33,7 @@ body {
     background: #f8f8f8;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    height: 100%;
 }
 
 

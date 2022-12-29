@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/ssy-ui.css">
+    <title>搜索组件</title>
+</head>
+
+<body>
+
+    <div class="ssy-header">
+        <div class="left"><i class="fa fa-chevron-left"></i></div>
+        <div class="title">SSY-UI 搜索框</div>
+        <div class="right"><i class="fa fa-ellipsis-h"></i></div>
+    </div>
+
+    <div class="ssy-content">
+        <!-- 带suggest的搜索框 -->
+        <div class="ssy-search">
+            <!-- 搜索框 -->
+            <form class="ssy-search-form" action="#">
+                <div class="ssy-search-input-wrap">
+                    <i class="fa fa-search ssy-search-icon"></i>
+                    <input type="text" class="ssy-search-input" placeholder="搜索" autocomplete="off" required />
+                    <i class="fa fa-close ssy-search-clear"></i>
+                </div>
+                <span class="ssy-search-cancel">取消</span>
+            </form>
+            <!-- 搜索建议 -->
+            <ul class="ssy-search-suggest">
+                <li class="ssy-suggest-item">手机</li>
+                <li class="ssy-suggest-item">iPhone XS Max</li>
+                <li class="ssy-suggest-item">华为P30</li>
+                <li class="ssy-suggest-item">小米 MIX3</li>
+                <li class="ssy-suggest-item">诺基亚1110</li>
+            </ul>
+        </div>
+        <p class="content">内容区</p>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        let ttSearch = document.querySelector('.ssy-search')
+        // 输入框被选中，进入搜索模式
+        document.querySelector('.ssy-search-input').addEventListener('focus', function () {
+            ttSearch.classList.add('on-focus')
+        })
+        // 点击取消，返回正常模式
+        document.querySelector('.ssy-search-cancel').addEventListener('click', function () {
+            ttSearch.classList.remove('on-focus')
+        })
+    }
+</script>
+
+</html>
