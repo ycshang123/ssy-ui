@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:46:34
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-29 21:55:28
+ * @LastEditTime: 2022-12-30 22:07:08
  */
 
 /* css reset */
@@ -34,3 +34,6 @@
 
 /* 列表的样式 */
 @import './list.css';
+
+/* 网格组件的样式 */
+@import './grid.css';
