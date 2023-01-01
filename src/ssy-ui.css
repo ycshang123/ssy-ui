@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:46:34
  * @LastEditors: ycshang
- * @LastEditTime: 2023-01-01 21:04:17
+ * @LastEditTime: 2023-01-01 21:35:23
  */
 
 /* css reset */
@@ -43,3 +43,6 @@
 
 /* 模态框组件的样式 */
 @import './modal.css';
+
+/* 加载提示组件 */
+@import './loading.css';

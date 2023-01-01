@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:51:36
  * @LastEditors: ycshang
- * @LastEditTime: 2022-12-28 21:49:00
+ * @LastEditTime: 2023-01-01 21:44:14
  */
 
 /* 字体图标，依赖font-awesome */
@@ -16,6 +16,26 @@
     height: 1.5rem;
     line-height: 1.5rem;
     font-size: 1.2rem;
+}
+
+/* 垂直方向上振动 */
+.fa-vibrate-y {
+    animation: fa-vibrate-y 1.5s infinite ease-in;
+}
+
+/* 振动轨迹 */
+@keyframes fa-vibrate-y {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
 }
 
 /* 红色图标 */
