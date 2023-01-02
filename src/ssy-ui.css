@@ -2,7 +2,7 @@
  * @Author: ycshang
  * @Date: 2022-12-27 20:46:34
  * @LastEditors: ycshang
- * @LastEditTime: 2023-01-01 21:35:23
+ * @LastEditTime: 2023-01-02 21:49:21
  */
 
 /* css reset */
@@ -46,3 +46,6 @@
 
 /* 加载提示组件 */
 @import './loading.css';
+
+/* Toast弹出提示组件 */
+@import './toast.css';
