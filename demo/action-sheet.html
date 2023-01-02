@@ -1,0 +1,56 @@
+<!--
+ * @Author: ycshang
+ * @Date: 2023-01-02 22:00:03
+ * @LastEditors: ycshang
+ * @LastEditTime: 2023-01-02 22:03:15
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/ssy-ui.css">
+    <title>ActionSheet弹出式菜单</title>
+</head>
+
+<body>
+    <div class="ssy-content">
+        <h1 class="ssy-panel-title">ActionSheet弹出式菜单</h1>
+        <div class="ssy-panel-body">
+            <a class="ssy-btn" id="js-show">显示弹出式菜单</a>
+        </div>
+    </div>
+    <div class="ssy-action-sheet">
+        <div class="ssy-mask"></div>
+        <div class="ssy-action-sheet-wrap">
+            <div class="ssy-action-sheet-header">
+                <h1 class="ssy-action-sheet-title">你需要做什么操作？</h1>
+            </div>
+            <div class="ssy-action-sheet-body">
+                <a class="ssy-action-sheet-menu">收藏</a>
+                <a class="ssy-action-sheet-menu">关注</a>
+                <a class="ssy-action-sheet-menu">分享给好友</a>
+            </div>
+            <div class="ssy-action-sheet-footer">
+                <a class="ssy-action-sheet-menu" id="js-close">取消</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    window.onload = () => {
+        // 弹出菜单
+        document.querySelector('#js-show').onclick = (e) => {
+            document.querySelector('.ssy-action-sheet').classList.add('show')
+        }
+        // 收回菜单
+        document.querySelector('#js-close').onclick = (e) => {
+            document.querySelector('.ssy-action-sheet').classList.remove('show')
+        }
+    };
+</script>
+
+</html>
