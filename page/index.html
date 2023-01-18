@@ -1,0 +1,136 @@
+<!--
+ * @Author: ycshang
+ * @Date: 2023-01-18 16:52:01
+ * @LastEditors: ycshang
+ * @LastEditTime: 2023-01-18 17:00:04
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/ssy-ui.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>SSY优品-首页</title>
+</head>
+
+<body class="page-index">
+    <!-- 首页 -->
+    <div class="ssy-content">
+        <!-- 带suggest的搜索框 -->
+        <div class="ssy-search">
+            <!-- 搜索中的状态 -->
+            <!-- <div class="ssy-search on-focus"> -->
+            <!-- 搜索框 -->
+            <form class="ssy-search-form" action="#">
+                <div class="ssy-search-input-wrap">
+                    <i class="fa fa-search ssy-search-icon"></i>
+                    <input type="text" class="ssy-search-input" placeholder="搜索" autocomplete="off" required />
+                    <i class="fa fa-close ssy-search-clear"></i>
+                </div>
+                <span class="ssy-search-cancel">取消</span>
+            </form>
+            <!-- 文章分类 -->
+            <div class="ssy-grid ssy-grid-4 no-border yp-category">
+                <a href="./list.html" class="ssy-grid-item item-1">
+                    <i class="fa fa-female ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">女装</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-2">
+                    <i class="fa fa-book ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">图书</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-3">
+                    <i class="fa fa-briefcase ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">箱包</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-4">
+                    <i class="fa fa-diamond ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">珠宝首饰</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-5">
+                    <i class="fa fa-soccer-ball-o ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">体育用品</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-6">
+                    <i class="fa fa-tv ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">电视</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-7">
+                    <i class="fa fa-mobile-phone ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">手机</p>
+                </a>
+                <a href="./list.html" class="ssy-grid-item item-8">
+                    <i class="fa fa-print ssy-grid-icon"></i>
+                    <p class="ssy-grid-label">打印设备</p>
+                </a>
+            </div>
+            <!-- 搜索建议
+            <ul class="ssy-search-suggest">
+                <li class="ssy-suggest-item">手机</li>
+                <li class="ssy-suggest-item">iPhone XS Max</li>
+                <li class="ssy-suggest-item">华为P30</li>
+                <li class="ssy-suggest-item">小米 MIX3</li>
+                <li class="ssy-suggest-item">诺基亚1110</li>
+            </ul> -->
+            <!-- 猜你喜欢 -->
+            <h1 class="ssy-panel-title">
+                猜你喜欢
+                <a href="./list.html" class="ssy-panel-link">查看更多>></a>
+            </h1>
+            <div class="ssy-panel-body no-padding">
+                <div class="ssy-list">
+                    <a href="./article.html" class="ssy-list-item">
+                        <div class="item-img-wrap">
+                            <img class="item-img" src="img/list-img.jpg" alt="旅行必不可少">
+                        </div>
+                        <div class="item-content-wrap">
+                            <h1 class="item-title">大美新疆 | 玩遍这片大好山河，这些装备必不可少</h1>
+                            <p class="item-desc">发布时间：2022-8-18</p>
+                            <p class="item-desc">阅读1923次 | 收藏398次</p>
+                        </div>
+                    </a>
+                    <a href="./article.html" class="ssy-list-item">
+                        <div class="item-img-wrap">
+                            <img class="item-img" src="img/list-img.jpg" alt="旅行必不可少">
+                        </div>
+                        <div class="item-content-wrap">
+                            <h1 class="item-title">大美新疆 | 玩遍这片大好山河，这些装备必不可少</h1>
+                            <p class="item-desc">发布时间：2022-8-18</p>
+                            <p class="item-desc">阅读1923次 | 收藏398次</p>
+                        </div>
+                    </a>
+                    <a href="./article.html" class="ssy-list-item">
+                        <div class="item-img-wrap">
+                            <img class="item-img" src="img/list-img.jpg" alt="旅行必不可少">
+                        </div>
+                        <div class="item-content-wrap">
+                            <h1 class="item-title">大美新疆 | 玩遍这片大好山河，这些装备必不可少</h1>
+                            <p class="item-desc">发布时间：2022-8-18</p>
+                            <p class="item-desc">阅读1923次 | 收藏398次</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航条 -->
+    <div class="ssy-navbar">
+        <a class="navbar-item active">
+            <i class="fa fa-home icon"></i>
+            <span class="name">首页</span>
+        </a>
+        <a class="navbar-item" href="./list.html">
+            <i class="fa fa-search icon"></i>
+            <span class="name">发现</span>
+        </a>
+        <a class="navbar-item" href="./mine.html">
+            <i class="fa fa-user-o icon"></i>
+            <span class="name">我的</span>
+        </a>
+    </div>
+</body>
+
+</html>

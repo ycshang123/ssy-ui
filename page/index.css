@@ -1,0 +1,49 @@
+/* 缩小网格的高度 */
+.page-index .ssy-grid>.ssy-grid-item {
+    padding: .5rem 0;
+}
+
+/* 网格导航的颜色设置 */
+.page-index .ssy-grid>.ssy-grid-item.item-1>.ssy-grid-icon {
+    color: #f93c32;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-2>.ssy-grid-icon {
+    color: #1dbdd4;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-3>.ssy-grid-icon {
+    color: #eb1d57;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-4>.ssy-grid-icon {
+    color: #00bb4b;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-5>.ssy-grid-icon {
+    color: #fd9707;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-6>.ssy-grid-icon {
+    color: #fc5024;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-7>.ssy-grid-icon {
+    color: #9a00b0;
+}
+
+.page-index .ssy-grid>.ssy-grid-item.item-8>.ssy-grid-icon {
+    color: #f3443c;
+}
+
+/* 标题导航 */
+.ssy-content .ssy-panel-title>.ssy-panel-link {
+    float: right;
+    margin-right: 1rem;
+    color: #aaa;
+}
+
+/* 调整间距 */
+.page-index .yp-category {
+    margin-bottom: .5rem;
+}
